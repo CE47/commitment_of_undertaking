@@ -41,29 +41,6 @@ insensitive):
 Only **Name** is strictly required; missing optional fields are left blank in the document.
 See `sample.csv` for an example.
 
-## Deploy to GitHub Pages
-
-1. Create a new repository on GitHub (e.g. `commitment-of-undertaking`).
-2. Upload these files to the repository root:
-   - `index.html`
-   - `app.js`
-   - `template.docx`
-   - `sample.csv`
-   - `README.md`
-   ```bash
-   git init
-   git add index.html app.js template.docx sample.csv README.md
-   git commit -m "Commitment of Undertaking generator"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<your-repo>.git
-   git push -u origin main
-   ```
-3. On GitHub go to **Settings → Pages**.
-4. Under **Build and deployment**, set **Source = Deploy from a branch**,
-   **Branch = `main`**, **folder = `/ (root)`**, then **Save**.
-5. Wait ~1 minute. Your site will be live at:
-   `https://<your-username>.github.io/<your-repo>/`
-
 ## Run locally
 
 Because the page fetches `template.docx`, open it through a local web server
